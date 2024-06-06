@@ -15,6 +15,8 @@ namespace Services.ServPurchaseDetail
             _myDbContext = new MyContext();
             _svShoe = new SvShoe();
         }
+
+        #region Writes
         public PurchaseDetail AddPurchase(PurchaseDetail purchase)
         {
             Entidades.Shoe shoe = _svShoe.GetShoeById(purchase.ShoeId);
@@ -42,7 +44,24 @@ namespace Services.ServPurchaseDetail
                 _myDbContext.SaveChanges();
             }
         }
+        public void DeletePurchasesByCustumerId(List<PurchaseDetail> purchaseDetailsCustomer)
+        {
+            _myDbContext.PurchaseDetails.RemoveRange(purchaseDetailsCustomer);
+            _myDbContext.SaveChanges();
+        }
+        public PurchaseDetail UpdatePurchase(int id, PurchaseDetail purchase)
+        {
+            PurchaseDetail purchaseUpdate = _myDbContext.PurchaseDetails.Find(id);
+            purchaseUpdate.Quantity = purchase.Quantity;
 
+            _myDbContext.Update(purchaseUpdate);
+            _myDbContext.SaveChanges();
+
+            return purchaseUpdate;
+        }
+        #endregion
+
+        #region Reads
         public List<PurchaseDetail> GetAllPurchases()
         {
             return _myDbContext.PurchaseDetails.Include(x => x.Shoe).Include(x => x.Customer).ToList();
@@ -53,28 +72,11 @@ namespace Services.ServPurchaseDetail
             return _myDbContext.PurchaseDetails.Include(x => x.Shoe).Include(x => x.Customer).SingleOrDefault(x => x.Id == id);
         }
 
-        public PurchaseDetail UpdatePurchase(int id, PurchaseDetail purchase)
-        {
-            PurchaseDetail purchaseUpdate = _myDbContext.PurchaseDetails.Find(id);
-            purchaseUpdate.Quantity = purchase.Quantity;
-            purchaseUpdate.ShoeId = purchase.ShoeId;
-
-            _myDbContext.Update(purchaseUpdate);
-            _myDbContext.SaveChanges();
-
-            return purchaseUpdate;
-        }
-
         public List<PurchaseDetail> GetAllPurchasesByCustumerId(int IdCustumer)
         {
             return _myDbContext.PurchaseDetails.Where(x => x.CustomerId == IdCustumer).ToList();
             //_myDbContext.PurchaseDetails.RemoveRange();
         }
-
-        public void DeletePurchasesByCustumerId(List<PurchaseDetail> purchaseDetailsCustomer)
-        {
-            _myDbContext.PurchaseDetails.RemoveRange(purchaseDetailsCustomer);
-            _myDbContext.SaveChanges();
-        }
+        #endregion
     }
 }

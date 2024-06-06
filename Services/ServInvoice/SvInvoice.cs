@@ -19,6 +19,8 @@ namespace Services.Invoice
             _svCustomer = new SvCustomer();
             _svPurchaseDetail = new SvPurchaseDatail();
         }
+
+        #region Writes
         public Entidades.Invoice AddInvoice(Entidades.Invoice newInvoice)
         {
             Entidades.Customer custumer = _svCustomer.GetCostumerById(newInvoice.CostumerId);
@@ -44,7 +46,9 @@ namespace Services.Invoice
                 }
             }
         }
+        #endregion
 
+        #region Reads
         public List<Entidades.Invoice> GetAllInvoices()
         {
             return _myDbContext.Invoices.Include(x => x.Customer).ToList();
@@ -54,7 +58,9 @@ namespace Services.Invoice
         {
             return _myDbContext.Invoices.Include(x => x.Customer).SingleOrDefault(x => x.Id == invoiceId);
         }
+        #endregion
 
+        #region Utilities
         void InvoiceMail(Entidades.Invoice invoice, List<PurchaseDetail> purchaseDetails_Customer)
         {
             // Obtener información del cliente
@@ -65,7 +71,7 @@ namespace Services.Invoice
             string body = mail.GenerateHtml(purchaseDetails_Customer, invoice, customer);
             mail.sendMail(customer.Email, "Factura SportZone", body);
         }
-
+        #endregion
     }
 }
 
