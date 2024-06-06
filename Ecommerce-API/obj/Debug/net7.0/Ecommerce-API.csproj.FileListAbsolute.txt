@@ -328,3 +328,4 @@ C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueb
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Ecommerce-API\obj\Debug\net7.0\Ecommerce-API.pdb
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Ecommerce-API\obj\Debug\net7.0\Ecommerce-API.genruntimeconfig.cache
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Ecommerce-API\obj\Debug\net7.0\ref\Ecommerce-API.dll
+C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Ecommerce-API\obj\Debug\net7.0\Ecommerce-API.sourcelink.json

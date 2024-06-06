@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\services\\servpurchasedetail\\svpurchasedatail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|solutionrelative:services\\servpurchasedetail\\svpurchasedatail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\services\\servshoe\\svshoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|solutionrelative:services\\servshoe\\svshoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\services\\servcustomer\\svcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|solutionrelative:services\\servcustomer\\svcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\services\\servpurchasedetail\\svpurchasedatail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|solutionrelative:services\\servpurchasedetail\\svpurchasedatail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B81E7A98-897D-438E-8EDA-18FD6C642491}|Entidades\\Entidades.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\entidades\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81E7A98-897D-438E-8EDA-18FD6C642491}|Entidades\\Entidades.csproj|solutionrelative:entidades\\shoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\services\\servinvoice\\svinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|solutionrelative:services\\servinvoice\\svinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\services\\servshoe\\svshoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|solutionrelative:services\\servshoe\\svshoe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B81E7A98-897D-438E-8EDA-18FD6C642491}|Entidades\\Entidades.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\entidades\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B81E7A98-897D-438E-8EDA-18FD6C642491}|Entidades\\Entidades.csproj|solutionrelative:entidades\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2668DE8-E4FE-4C8B-9F9D-C79730E366D5}|Services\\Services.csproj|c:\\documentos\\programaci\u00F3n ii\\proyecto-progra-ii\\proyecto-spportzonefinal\\prueba\\services\\servcategory\\svcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -55,19 +63,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Shoe.cs",
+              "DocumentMoniker": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Entidades\\Shoe.cs",
+              "RelativeDocumentMoniker": "Entidades\\Shoe.cs",
+              "ToolTip": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Entidades\\Shoe.cs",
+              "RelativeToolTip": "Entidades\\Shoe.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:55:48.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Entidades\\Invoice.cs",
+              "RelativeDocumentMoniker": "Entidades\\Invoice.cs",
+              "ToolTip": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Entidades\\Invoice.cs",
+              "RelativeToolTip": "Entidades\\Invoice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T22:55:48.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SvShoe.cs",
               "DocumentMoniker": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServShoe\\SvShoe.cs",
               "RelativeDocumentMoniker": "Services\\ServShoe\\SvShoe.cs",
               "ToolTip": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServShoe\\SvShoe.cs",
               "RelativeToolTip": "Services\\ServShoe\\SvShoe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAASAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAhwCQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T20:12:25.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SvCategory.cs",
               "DocumentMoniker": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServCategory\\SvCategory.cs",
               "RelativeDocumentMoniker": "Services\\ServCategory\\SvCategory.cs",
@@ -75,44 +109,43 @@
               "RelativeToolTip": "Services\\ServCategory\\SvCategory.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T05:20:04.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T05:20:04.091Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SvCustomer.cs",
               "DocumentMoniker": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServCustomer\\SvCustomer.cs",
               "RelativeDocumentMoniker": "Services\\ServCustomer\\SvCustomer.cs",
               "ToolTip": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServCustomer\\SvCustomer.cs",
               "RelativeToolTip": "Services\\ServCustomer\\SvCustomer.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwDQAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwD4AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T23:57:16.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "SvPurchaseDatail.cs",
               "DocumentMoniker": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServPurchaseDetail\\SvPurchaseDatail.cs",
               "RelativeDocumentMoniker": "Services\\ServPurchaseDetail\\SvPurchaseDatail.cs",
               "ToolTip": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServPurchaseDetail\\SvPurchaseDatail.cs",
               "RelativeToolTip": "Services\\ServPurchaseDetail\\SvPurchaseDatail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAAAoAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAlwC4AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-04T20:18:39.178Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SvInvoice.cs",
               "DocumentMoniker": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServInvoice\\SvInvoice.cs",
               "RelativeDocumentMoniker": "Services\\ServInvoice\\SvInvoice.cs",
               "ToolTip": "C:\\Documentos\\Programaci\u00F3n II\\Proyecto-Progra-II\\Proyecto-SpportZoneFInal\\Prueba\\Services\\ServInvoice\\SvInvoice.cs",
               "RelativeToolTip": "Services\\ServInvoice\\SvInvoice.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADEAAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAnwCMAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T05:36:43.943Z",
               "EditorCaption": ""

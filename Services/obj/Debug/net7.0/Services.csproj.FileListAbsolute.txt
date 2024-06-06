@@ -202,3 +202,4 @@ C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueb
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Services\obj\Debug\net7.0\Services.pdb
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Services\obj\Debug\net7.0\Services.genruntimeconfig.cache
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Services\obj\Debug\net7.0\ref\Services.dll
+C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Services\obj\Debug\net7.0\Services.sourcelink.json

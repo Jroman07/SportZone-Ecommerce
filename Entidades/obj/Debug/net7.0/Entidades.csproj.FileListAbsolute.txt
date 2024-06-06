@@ -76,3 +76,4 @@ C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueb
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Entidades\obj\Debug\net7.0\refint\Entidades.dll
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Entidades\obj\Debug\net7.0\Entidades.pdb
 C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Entidades\obj\Debug\net7.0\ref\Entidades.dll
+C:\Documentos\Programación II\Proyecto-Progra-II\Proyecto-SpportZoneFInal\Prueba\Entidades\obj\Debug\net7.0\Entidades.sourcelink.json

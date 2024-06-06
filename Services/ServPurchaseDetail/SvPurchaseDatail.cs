@@ -38,10 +38,14 @@ namespace Services.ServPurchaseDetail
         public void DeletePurchase(int id)
         {
             PurchaseDetail deletePurchase = _myDbContext.PurchaseDetails.Find(id);
+            
             if (deletePurchase != null)
             {
                 _myDbContext.PurchaseDetails.Remove(deletePurchase);
                 _myDbContext.SaveChanges();
+                Entidades.Shoe shoe = _svShoe.GetShoeById(deletePurchase.ShoeId);
+                shoe.plusStock(deletePurchase.Quantity);
+                _svShoe.UpdateShoe(deletePurchase.ShoeId, shoe);
             }
         }
         public void DeletePurchasesByCustumerId(List<PurchaseDetail> purchaseDetailsCustomer)

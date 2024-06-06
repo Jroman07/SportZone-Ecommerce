@@ -30,5 +30,7 @@ namespace Entidades
                 return true;
             }
         }
+
+        public void plusStock(int quantity) { this.Stock += quantity; }
     }
 }
