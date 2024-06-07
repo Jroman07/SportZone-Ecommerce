@@ -41,7 +41,7 @@ namespace Services.Invoice
                     _myDbContext.Invoices.Add(newInvoice);
                     _myDbContext.SaveChanges();
                     InvoiceMail(newInvoice, purchaseDetails);
-                    _svPurchaseDetail.DeletePurchasesByCustumerId(purchaseDetails);
+                    //_svPurchaseDetail.DeletePurchasesByCustumerId(purchaseDetails);
                     return newInvoice;
                 }
             }
@@ -51,7 +51,22 @@ namespace Services.Invoice
         #region Reads
         public List<Entidades.Invoice> GetAllInvoices()
         {
-            return _myDbContext.Invoices.Include(x => x.Customer).ToList();
+            // Obtener todas las facturas incluyendo la información del cliente
+            var invoices = _myDbContext.Invoices.Include(x => x.Customer).ToList();
+
+            // Obtener todos los PurchaseDetails
+            var purchaseDetails = _myDbContext.PurchaseDetails.ToList();
+
+            // Asignar manualmente los PurchaseDetails a cada Invoice basado en los IDs
+            foreach (var invoice in invoices)
+            {
+                invoice.PurchaseDetails = purchaseDetails
+                    .Where(pd => invoice.PurchaseDetailIds.Contains(pd.Id))
+                    .ToList();
+            }
+
+            return invoices;
+            //return _myDbContext.Invoices.Include(x => x.Customer).ToList();
         }
 
         public Entidades.Invoice GetInvoiceById(int invoiceId)
