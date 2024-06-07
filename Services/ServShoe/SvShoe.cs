@@ -66,7 +66,8 @@ namespace Services.Shoe
 
         public Entidades.Shoe GetShoeById(int id)
         {
-            return _myDbContext.Shoes.Where(Shoe => Shoe.IsActive).Include(x => x.Category).SingleOrDefault(x => x.Id == id);
+            var listValidCategories = _svCategory.GetAllCategories().Select(x => x.Id);
+            return _myDbContext.Shoes.Include(x => x.Category).Where(Shoe => Shoe.IsActive && listValidCategories.Contains(Shoe.CategoryId)).SingleOrDefault(x => x.Id == id);
         }
         #endregion
     }

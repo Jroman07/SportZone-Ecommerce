@@ -10,28 +10,35 @@ namespace Services.ServPurchaseDetail
     {
         private MyContext _myDbContext = default!;
         private SvShoe _svShoe = default!;
+        private SvCustomer _svCustomer = default!;
         public SvPurchaseDatail()
         {
             _myDbContext = new MyContext();
             _svShoe = new SvShoe();
+            _svCustomer = new SvCustomer();
         }
 
         #region Writes
         public PurchaseDetail AddPurchase(PurchaseDetail purchase)
         {
-            Entidades.Shoe shoe = _svShoe.GetShoeById(purchase.ShoeId);
-            if (shoe.SubtractStock(purchase.Quantity) == false)
-            {
+            Entidades.Customer custumer = _svCustomer.GetCostumerById(purchase.CustomerId);
+
+            if (custumer == null) {
                 return purchase = null;
             }
-            else
-            {
-                _svShoe.UpdateStock(purchase.ShoeId, shoe);
-                purchase.setPrice(shoe);
-                _myDbContext.PurchaseDetails.Add(purchase);
-                _myDbContext.SaveChanges();
+            else  {
+                Entidades.Shoe shoe = _svShoe.GetShoeById(purchase.ShoeId);
+                if (shoe.SubtractStock(purchase.Quantity) == false) {
+                    return purchase = null;
+                }
+                else {
+                    _svShoe.UpdateStock(purchase.ShoeId, shoe);
+                    purchase.setPrice(shoe);
+                    _myDbContext.PurchaseDetails.Add(purchase);
+                    _myDbContext.SaveChanges();
 
-                return purchase;
+                    return purchase;
+                }
             }
         }
 
