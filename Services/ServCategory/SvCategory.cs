@@ -48,12 +48,19 @@ namespace Services.ServCategory
         public Category UpdateCategory(int id, Category category)
         {
             Category categoryUpdate = _myDbContext.Categories.Find(id);
-            categoryUpdate.Name = category.Name;
+            if(categoryUpdate == null)
+            {
+                return null;
+            }
+           else
+            {
+                categoryUpdate.Name = category.Name;
 
-            _myDbContext.Update(categoryUpdate);
-            _myDbContext.SaveChanges();
+                _myDbContext.Update(categoryUpdate);
+                _myDbContext.SaveChanges();
 
-            return categoryUpdate;
+                return categoryUpdate;
+            }
         }
 
         #endregion

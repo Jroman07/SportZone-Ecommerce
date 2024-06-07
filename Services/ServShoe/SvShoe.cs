@@ -37,15 +37,22 @@ namespace Services.Shoe
         public Entidades.Shoe UpdateShoe(int id, Entidades.Shoe shoe)
         {
             Entidades.Shoe shoeUpdate = _myDbContext.Shoes.Find(id);
-            shoeUpdate.Size = shoe.Size;
-            shoeUpdate.Name = shoe.Name;
-            shoeUpdate.Price = shoe.Price;
-            shoeUpdate.Stock = shoe.Stock;
+            if (shoeUpdate == null)
+            {
+                return null;
+            }
+            else
+            {
+                shoeUpdate.Size = shoe.Size;
+                shoeUpdate.Name = shoe.Name;
+                shoeUpdate.Price = shoe.Price;
+                shoeUpdate.Stock = shoe.Stock;
 
-            _myDbContext.Shoes.Update(shoeUpdate);
-            _myDbContext.SaveChanges();
+                _myDbContext.Shoes.Update(shoeUpdate);
+                _myDbContext.SaveChanges();
 
-            return shoeUpdate;
+                return shoeUpdate;
+            }
         }
         public void UpdateStock(int id, Entidades.Shoe shoe)
         {
