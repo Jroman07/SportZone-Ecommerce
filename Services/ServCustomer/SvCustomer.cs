@@ -35,13 +35,20 @@ namespace Services.Customer
         public Entidades.Customer UpdateCustomer(int id, Entidades.Customer customer)
         {
             Entidades.Customer customerUpdate = _myDbContext.Customers.Find(id);
-            customerUpdate.Name = customer.Name;
-            customerUpdate.Email = customer.Email;
+            if (customerUpdate == null)
+            {
+                return null;
+            }
+            else
+            {
+                customerUpdate.Name = customer.Name;
+                customerUpdate.Email = customer.Email;
 
-            _myDbContext.Update(customerUpdate);
-            _myDbContext.SaveChanges();
+                _myDbContext.Update(customerUpdate);
+                _myDbContext.SaveChanges();
 
-            return customerUpdate;
+                return customerUpdate;
+            }
         }
         #endregion
 

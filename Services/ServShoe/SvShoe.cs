@@ -58,11 +58,11 @@ namespace Services.Shoe
         #endregion
 
         #region Reads
-        public List<Entidades.Shoe> GetAllShoes()
-        {
-            var listValidCategories = _svCategory.GetAllCategories().Select(x=>x.Id);
-            return _myDbContext.Shoes.Include(x => x.Category).Where(Shoe => Shoe.IsActive && listValidCategories.Contains(Shoe.CategoryId)).ToList();
-        }
+            public List<Entidades.Shoe> GetAllShoes()
+            {
+                var listValidCategories = _svCategory.GetAllCategories().Select(x=>x.Id);
+                return _myDbContext.Shoes.Include(x => x.Category).Where(Shoe => Shoe.IsActive && listValidCategories.Contains(Shoe.CategoryId)).ToList();
+            }
 
         public Entidades.Shoe GetShoeById(int id)
         {
