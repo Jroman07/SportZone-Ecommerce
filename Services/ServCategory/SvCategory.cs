@@ -55,7 +55,6 @@ namespace Services.ServCategory
            else
             {
                 categoryUpdate.Name = category.Name;
-
                 _myDbContext.Update(categoryUpdate);
                 _myDbContext.SaveChanges();
 

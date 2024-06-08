@@ -36,7 +36,6 @@ namespace Services.ServPurchaseDetail
                     purchase.setPrice(shoe);
                     _myDbContext.PurchaseDetails.Add(purchase);
                     _myDbContext.SaveChanges();
-
                     return purchase;
                 }
             }
@@ -55,20 +54,32 @@ namespace Services.ServPurchaseDetail
                 _svShoe.UpdateShoe(deletePurchase.ShoeId, shoe);
             }
         }
-        public void DeletePurchasesByCustumerId(List<PurchaseDetail> purchaseDetailsCustomer)
+        public void DeletePurchasesByCustumerId(List<PurchaseDetail>List_PurchaseDetail)
         {
-            _myDbContext.PurchaseDetails.RemoveRange(purchaseDetailsCustomer);
+            foreach (var item in List_PurchaseDetail)
+            {
+                item.changeIsPagar();
+                _myDbContext.Update(item);
+            }
             _myDbContext.SaveChanges();
         }
         public PurchaseDetail UpdatePurchase(int id, PurchaseDetail purchase)
         {
             PurchaseDetail purchaseUpdate = _myDbContext.PurchaseDetails.Find(id);
-            purchaseUpdate.Quantity = purchase.Quantity;
+            if(purchaseUpdate == null) {
 
-            _myDbContext.Update(purchaseUpdate);
-            _myDbContext.SaveChanges();
+                return null;
+            }
+            else
+            {
+                purchaseUpdate.Quantity = purchase.Quantity;
 
-            return purchaseUpdate;
+                _myDbContext.Update(purchaseUpdate);
+                _myDbContext.SaveChanges();
+
+                return purchaseUpdate;
+            }
+            
         }
         #endregion
 
@@ -85,7 +96,9 @@ namespace Services.ServPurchaseDetail
 
         public List<PurchaseDetail> GetAllPurchasesByCustumerId(int IdCustumer)
         {
-            return _myDbContext.PurchaseDetails.Where(x => x.CustomerId == IdCustumer).ToList();
+            return _myDbContext.PurchaseDetails
+                      .Where(x => x.CustomerId == IdCustumer && x.IsPagar).ToList();
+            // return _myDbContext.PurchaseDetails.Where(x => x.CustomerId == x.IsPagar).ToList();
             //_myDbContext.PurchaseDetails.RemoveRange();
         }
         #endregion
